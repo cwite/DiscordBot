@@ -25,7 +25,7 @@ bot.on('guildMemberAdd', member =>{
 
     switch (args[0]) { 
         case 'help':
-            message.author.send('Hello There!\nMy Name Is cwitebot\nHere are the commands that you can use:\nping, react, help, RIP, cursed, blursed, dog');
+            message.author.send('Hello There!\nMy Name Is cwitebot\nHere are the commands that you can use:\nping, react, help, RIP, cursed, blursed, dog\nFeel free to give me any suggestions for commands I should add in the future!');
         break;
         case 'help react':
             message.author.send('this will react to your message!');
@@ -36,17 +36,18 @@ bot.on('guildMemberAdd', member =>{
         case 'react':
             message.react("🐵");
         break;
+        
         case 'RIP':
             message.channel.send('R.I.P James Bond 2020 - 2020')
         break;
         case 'cursed':
-            image(message, 'cursed image');
+            message.channel.send("yikes looks like these arent working, suck it up u fat neek");
         break;
         case 'blursed':
-            image(message, 'blursed image');
+            message.channel.send("yikes looks like these arent working, suck it up u fat neek");
         break;
         case 'dog':
-            image(message, 'dog');
+            message.channel.send("yikes looks like these arent working, suck it up u fat neek");
         break;
         
     }
