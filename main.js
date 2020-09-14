@@ -50,7 +50,7 @@ bot.on('guildMemberAdd', member =>{
             message.channel.send("yikes looks like these arent working, suck it up u fat neek");
         break;
         case 'announcement':
-            channel.send('@everyone ANNOUNCEMENT COMMENCING!');
+            message.channel.send('@everyone ANNOUNCEMENT COMMENCING! Head over to the announcement channel please');
         break;
         
     }
