@@ -25,7 +25,7 @@ bot.on('guildMemberAdd', member =>{
 
     switch (args[0]) { 
         case 'help':
-            message.author.send('Hello There!\nMy Name Is cwitebot\nHere are the commands that you can use:\nping, react, help, RIP, cursed, blursed, dog\nFeel free to give me any suggestions for commands I should add in the future!');
+            message.author.send('Hello There!\nMy Name Is cwitebot\nHere are the commands that you can use:\nping, react, help, RIP, cursed, blursed, dog, announcement\nFeel free to give me any suggestions for commands I should add in the future!');
         break;
         case 'help react':
             message.author.send('this will react to your message!');
