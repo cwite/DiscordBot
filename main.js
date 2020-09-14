@@ -49,6 +49,9 @@ bot.on('guildMemberAdd', member =>{
         case 'dog':
             message.channel.send("yikes looks like these arent working, suck it up u fat neek");
         break;
+        case 'announcement':
+            channel.send('@everyone ANNOUNCEMENT COMMENCING!');
+        break;
         
     }
  
