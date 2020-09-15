@@ -14,7 +14,7 @@ bot.on('ready', () => {
  
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
-    emitter.setMaxListeners(50);
+    Discord.setMaxListeners.setMaxListeners(50);
 
 
 
