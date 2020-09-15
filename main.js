@@ -14,7 +14,7 @@ bot.on('ready', () => {
  
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
-    Client.defaultMaxListeners(50);
+    
 
 
 
