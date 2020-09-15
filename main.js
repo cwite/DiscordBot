@@ -14,14 +14,9 @@ bot.on('ready', () => {
  
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
+    emitter.setMaxListeners(50);
 
-bot.on('guildMemberAdd', member =>{
-    const channel = member.guild.channels.find(channel => channel.name === "announcements");
-    if(!channel) return;
 
-    channel.send(`Welcome ${member}, now go away`);
-});
-    
 
     switch (args[0]) { 
         case 'help':
