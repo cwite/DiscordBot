@@ -9,7 +9,7 @@ const PREFIX = '!';
  
  
 bot.on('ready', () => {
-    console.log('whomst has awaken the elevated one');
+    console.log('do not question the elevated one');
 })
  
 bot.on('message', message => {
@@ -31,7 +31,6 @@ bot.on('message', message => {
         case 'react':
             message.react("🐵");
         break;
-        
         case 'RIP':
             message.channel.send('R.I.P James Bond 2020 - 2020')
         break;
