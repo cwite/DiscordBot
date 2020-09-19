@@ -50,6 +50,29 @@ bot.on('message', message => {
         case 'mute':
         message.channel.send('get muted lol');
         break;
+        case 'pong':
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('@everyone');
+          message.channel.send('ping lol');
+        break;
 
     }
 
