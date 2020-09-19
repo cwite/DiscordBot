@@ -71,7 +71,7 @@ bot.on('message', message => {
           message.channel.send('@everyone');
           message.channel.send('@everyone');
           message.channel.send('@everyone');
-          message.channel.send('ping lol');
+          message.channel.send('get pinged lol');
         break;
 
     }
