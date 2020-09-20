@@ -54,6 +54,18 @@ bot.on('message', message => {
           message.channel.send('@everyone'  + ' '(args[1]));
           message.channel.send('@everyone'  + ' '(args[1]));
           message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
+          message.channel.send('@everyone'  + ' '(args[1]));
         break;
 
     }
