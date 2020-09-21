@@ -57,7 +57,12 @@ bot.on('message', message => {
             message.channel.send((args[1]));
         break;
         case 'admin':
-            message.channel.setName((args[1]));
+            if((args[1]) === 'name'){
+                message.channel.setName((args[2]));
+            }
+            if((args[1]) === 'nsfw'){
+                message.channel.setNSFW(true, 'cause gamer');
+            }
         break;
 
 
