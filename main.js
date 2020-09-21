@@ -60,10 +60,10 @@ bot.on('message', message => {
             if((args[1]) === 'name'){
                 message.channel.setName((args[2]));
             }
-            if((args[1]) === 'nsfw'){
+            if((args[1]) === 'byemark'){
                 message.channel.setNSFW(true, 'cause gamer');
             }
-            if((args[1]) === 'notnsfw'){
+            if((args[1]) === 'himark'){
                 message.channel.setNSFW(false, 'cause gamer');
             }
             if((args[1]) === 'delete'){
