@@ -62,12 +62,6 @@ bot.on('message', message => {
             message.channel.send((args[1]));
             message.channel.send((args[1]));
             message.channel.send((args[1]));
-            message.channel.send((args[1]));
-            message.channel.send((args[1]));
-            message.channel.send((args[1]));
-            message.channel.send((args[1]));
-            message.channel.send('get annoyed lol');
-            
         break;
 
 
