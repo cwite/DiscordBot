@@ -56,7 +56,12 @@ bot.on('message', message => {
             message.channel.send((args[1]));
             message.channel.send((args[1]));
         break;
-
+        case 'yeet':
+            message.channel.setNSFW = true;
+        break;
+        case 'yet':
+            message.channel.setNSFW = false;
+        break;
 
 
     }
