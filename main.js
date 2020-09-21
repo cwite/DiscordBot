@@ -35,15 +35,6 @@ bot.on('message', message => {
         case 'RIP':
             message.channel.send('R.I.P James Bond 2020 - 2020')
         break;
-        case 'cursed':
-            message.channel.send("yikes looks like these arent working, suck it up u fat neek");
-        break;
-        case 'blursed':
-            message.channel.send("yikes looks like these arent working, suck it up u fat neek");
-        break;
-        case 'dog':
-            message.channel.send("yikes looks like these arent working, suck it up u fat neek");
-        break;
         case 'announcement':
             message.channel.send('@everyone ANNOUNCEMENT COMMENCING! Head over to the announcement channel please');
         break;
