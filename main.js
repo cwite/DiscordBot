@@ -63,10 +63,10 @@ bot.on('message', message => {
             if((args[1]) === 'nsfw'){
                 message.channel.setNSFW(true, 'cause gamer');
             }
-            if((args[1]) === 'notnsfw')[
-                message.channel.setNSFW(false, 'cause gamer')
-            ]
-            if((args[1]) === ''){
+            if((args[1]) === 'notnsfw'){
+                message.channel.setNSFW(false, 'cause gamer');
+            }
+            if((args[1]) === 'delete'){
                 message.channel.delete((args[2]));
             }
         break;
