@@ -58,9 +58,7 @@ bot.on('message', message => {
           
         break;
         case 'annoy':
-            if((args[1]) === '@cwite'){
-                break;
-            } 
+            
             message.channel.send((args[1]));
             message.channel.send((args[1]));
             message.channel.send((args[1]));
@@ -69,7 +67,7 @@ bot.on('message', message => {
             message.channel.send((args[1]));
             message.channel.send((args[1]));
             message.channel.send('get annoyed lol');
-            }
+            
         break;
 
 
