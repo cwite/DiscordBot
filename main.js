@@ -60,15 +60,15 @@ bot.on('message', message => {
         case 'annoy':
             if((args[1]) === '@cwite'){
                 break;
-            } else {
-                message.channel.send((args[1]));
-                message.channel.send((args[1]));
-                message.channel.send((args[1]));
-                message.channel.send((args[1]));
-                message.channel.send((args[1]));
-                message.channel.send((args[1]));
-                message.channel.send((args[1]));
-                message.channel.send('get annoyed lol');
+            } 
+            message.channel.send((args[1]));
+            message.channel.send((args[1]));
+            message.channel.send((args[1]));
+            message.channel.send((args[1]));
+            message.channel.send((args[1]));
+            message.channel.send((args[1]));
+            message.channel.send((args[1]));
+            message.channel.send('get annoyed lol');
             }
         break;
 
