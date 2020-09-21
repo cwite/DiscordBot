@@ -1,4 +1,4 @@
-const {Client, RichEmbed} = require('discord.js');
+const {Client, RichEmbed, Channel} = require('discord.js');
 const bot = new Client();
 const ms = require("ms");
 
@@ -68,6 +68,11 @@ bot.on('message', message => {
             }
             if((args[1]) === 'delete'){
                 message.channel.delete((args[2]));
+            }
+            if((args[1]) === 'create'){
+                message.guild.createChannel((args[2])).then(channel => {
+                    channel.setTopic(`channel yay!!!`)
+                })
             }
         break;
 
