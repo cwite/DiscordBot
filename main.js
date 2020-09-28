@@ -77,23 +77,8 @@ bot.on('message', message => {
                 })
             }
             if((args[1]) === 'restart'){
-                try {
-                    message.channel.send("<a:Loading:575715719103381506> Attempting a restart...").then(msg => {
-                      //msg.react('🆗');
-                      setTimeout(function(){
-                         msg.edit("<:CheckMark:550460857625346066> I should be back up now!");
-                      }, 10000);
-                    })
-                    .then(message.client.destroy())
-                    .then(message.client.login(process.env.token))
-            
-            
-            
-            
-                      } catch(e) {
-                        message.channel.send(`ERROR: ${e.message}`)
-            
-                }
+                bot.destroy();
+                bot.login(process.env.token);
             }
         break;
 
