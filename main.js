@@ -84,7 +84,7 @@ bot.on('message', message => {
                          msg.edit("<:CheckMark:550460857625346066> I should be back up now!");
                       }, 10000);
                     })
-                    .then(client.destroy())
+                    .then(message.client.destroy())
                     .then(client.login(process.env.token))
             
             
