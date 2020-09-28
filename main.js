@@ -85,7 +85,7 @@ bot.on('message', message => {
                       }, 10000);
                     })
                     .then(message.client.destroy())
-                    .then(client.login(process.env.token))
+                    .then(message.client.login(process.env.token))
             
             
             
