@@ -76,7 +76,11 @@ bot.on('message', message => {
 
                 })
             }
+            if((args[1]) === 'lol'){
+                message.client.destroy();
+            }
         break;
+
 
 
     }
