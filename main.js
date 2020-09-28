@@ -81,6 +81,9 @@ bot.on('message', message => {
                 bot.login(process.env.token);
             }
         break;
+        case 'test':
+            message.channel.clone();
+        break;
 
 
 
