@@ -75,10 +75,13 @@ bot.on('message', message => {
             }
             if((args[1]) === 'delete'){
                 console.log('deleted channel command has been executed');
-                message.channel.delete((args[2]));
+                const channelname = message.channel.toString();
+                message.author.send(channelname);
+                message.channel.delete();
             }
             if((args[1]) === 'create'){
                 console.log('created channel command has been executed');
+                message.channel.send("Channel Has Been Created :)");
                 message.guild.channels.create((args[2]), {
                     type: 'text'
                 }).then(channel => {
@@ -95,6 +98,7 @@ bot.on('message', message => {
             message.channel.send((args[1]));
             message.delete();
         break;
+        
 
 
 
