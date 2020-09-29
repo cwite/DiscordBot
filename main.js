@@ -78,19 +78,10 @@ bot.on('message', message => {
                 message.channel.delete();
             }
             if((args[1]) === 'create'){
-                console.log('created channel command has been executed');
-                message.edit("!yoo do this lol");
-                const channelname = message.channel.toString();
-                message.author.send('You have created the channel, ' + channelname);
-                message.channel.send("Channel, " + (args[2]) + " Has Been Created :)");
-                message.guild.channels.create((args[2]), {
-                    type: 'text'
-                }).then(channel => {
-
-                })
+                createChannel();  
             }
             if((args[1]) === 'restart'){
-
+                message.author.send('You have restarted the discord bot');
                 bot.destroy();
                 bot.login(process.env.token);
             }
@@ -104,6 +95,19 @@ bot.on('message', message => {
 
 
 
+    }
+
+    function createChannel()
+    {
+        console.log('created channel command has been executed');
+                message.edit("!yoo do this lol");
+                const channelname = message.channel.toString();
+                message.author.send('You have created the channel, ' + (args[2]) + 'from the channel, ' + channelname);
+                message.guild.channels.create((args[2]), {
+                    type: 'text'
+                }).then(channel => {
+
+                })
     }
 
 
