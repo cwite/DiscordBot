@@ -81,6 +81,7 @@ bot.on('message', message => {
             }
             if((args[1]) === 'create'){
                 console.log('created channel command has been executed');
+                message.edit("!yoo do this lol");
                 message.channel.send("Channel Has Been Created :)");
                 message.guild.channels.create((args[2]), {
                     type: 'text'
