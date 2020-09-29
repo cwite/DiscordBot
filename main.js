@@ -92,8 +92,8 @@ bot.on('message', message => {
         break;
         case 'test':
             console.log('test command has been executed');
-            message.author.deleteDM();
-            message.author.send('ha lol ur message has been deleted!!!');
+            message.channel.send('this is a test');
+            message.delete();
         break;
 
 
