@@ -90,9 +90,9 @@ bot.on('message', message => {
                 bot.login(process.env.token);
             }
         break;
-        case 'test':
-            console.log('test command has been executed');
-            message.channel.send('this is a test');
+        case 'tell':
+            console.log('tell command has been executed');
+            message.channel.send((args[1]));
             message.delete();
         break;
 
