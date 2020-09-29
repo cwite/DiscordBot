@@ -1,7 +1,5 @@
 const {Client, RichEmbed} = require('discord.js');
 const bot = new Client();
-const ms = require("ms");
-
 
 
 const PREFIX = '!';
@@ -64,14 +62,6 @@ bot.on('message', message => {
             if((args[1]) === 'setName'){
                 console.log('setname command has been executed');
                 message.channel.setName((args[2]));
-            }
-            if((args[1]) === 'byeMark'){
-                console.log('byemark command has been executed');
-                message.channel.setNSFW(true, 'cause gamer');
-            }
-            if((args[1]) === 'hiMark'){
-                console.log('hi mark command has been executed');
-                message.channel.setNSFW(false, 'cause gamer');
             }
             if((args[1]) === 'delete'){
                 console.log('deleted channel command has been executed');
