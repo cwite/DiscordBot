@@ -76,10 +76,11 @@ bot.on('message', message => {
                 bot.login(process.env.token);
             }
         break;
-        case 'tell':
+        case 'tell': 
             console.log('tell command has been executed');
             message.channel.send((args[1]));
             message.delete();
+            
         break;
         
 
@@ -90,9 +91,10 @@ bot.on('message', message => {
     function createChannel()
     {
         console.log('created channel command has been executed');
+        message.delete();
                 message.edit("!yoo do this lol");
                 const channelname = message.channel.toString();
-                message.author.send('You have created the channel, ' + (args[2]) + 'from the channel, ' + channelname);
+                message.author.send('You have created the channel, ' + (args[2]));
                 message.guild.channels.create((args[2]), {
                     type: 'text'
                 }).then(channel => {
