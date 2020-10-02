@@ -73,7 +73,10 @@ bot.on('message', message => {
                         name: args[3],
                         color: args[4]
                     })
-                    .then(role => console.log("role created"))
+                    .then(role => {
+                        console.log("role created");
+                        message.channel.send(`${role.name} role was created`)
+                    })
                     .catch(err => console.log(err))
 
                 } else {
