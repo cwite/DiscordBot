@@ -22,9 +22,8 @@ bot.on('message', message => {
             console.log('this will send a help message to the author');
             message.author.send('Hello There!\nMy Name Is cwitebot\nHere are the commands that you can use:\nping, react, help, announcement, annoy\nFeel free to give me any suggestions for commands I should add in the future!');
         break;
-        case 'help react':
-            console.log('this will send a help message to the author');
-            message.author.send('this will react to your message!');
+        case 'role':
+            message.author.send('put in !admin create role rolename color');
         break;
         case 'ping':
             console.log('ping command has been executed');
@@ -44,6 +43,7 @@ bot.on('message', message => {
         break;
         case 'pong':
             console.log('pong command has been executed');
+            message.delete();
             message.channel.send('@everyone'  + ' ' + (args[1]));
             message.channel.send('@everyone'  + ' ' + (args[1]));
             message.channel.send('@everyone'  + ' ' + (args[1]));
@@ -68,7 +68,17 @@ bot.on('message', message => {
                 message.channel.delete();
             }
             if((args[1]) === 'create'){
-                createChannel();  
+                if((args[2]) === 'role'){
+                    message.guild.createRole({
+                        name: args[3],
+                        color: args[4]
+                    })
+                    .then(role => console.log("role created"))
+                    .catch(err => console.log(err))
+
+                } else {
+                    createChannel();
+                }  
             }
             if((args[1]) === 'restart'){
                 message.author.send('You have restarted the discord bot');
@@ -82,6 +92,7 @@ bot.on('message', message => {
             message.delete();
             
         break;
+        
         
 
 
