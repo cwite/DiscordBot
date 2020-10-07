@@ -49,6 +49,10 @@ bot.on('message', message => {
             message.channel.send('@everyone'  + ' ' + (args[1]));
           
         break;
+        case 'mist':
+            message.delete();
+            message.channel.send('@mist' + (args[1]));
+        break;
         case 'annoy':
             console.log('annoyed ' + (args[1]) + ' succesfully');
             if((args[1]) === '@cwite'){
@@ -114,6 +118,21 @@ bot.on('message', message => {
                 }).then(channel => {
 
                 })
+    }
+    function createRole()
+    {
+        if((args[2]) === 'role'){
+            message.guild.createRole({
+                name: args[3],
+                color: args[4]
+            })
+            .then(role => {
+                console.log("role created");
+                message.channel.send(`${role.name} role was created`)
+            })
+            .catch(err => console.log(err))
+
+        }
     }
 
 
