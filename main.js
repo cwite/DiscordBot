@@ -52,6 +52,8 @@ bot.on('message', message => {
         case 'mist':
             message.delete();
             message.channel.send('@mist' + (args[1]));
+            message.channel.send('@mist' + (args[1]));
+            message.channel.send('@mist' + (args[1]));
         break;
         case 'annoy':
             console.log('annoyed ' + (args[1]) + ' succesfully');
