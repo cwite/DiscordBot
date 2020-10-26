@@ -1,10 +1,10 @@
 const {Client, RichEmbed} = require('discord.js');
 const bot = new Client();
-
+var ytdl = require("ytdl-core");
 
 const PREFIX = '!';
 
-
+var servers = {};
 
 
 bot.on('ready', () => {
@@ -101,7 +101,22 @@ bot.on('message', message => {
             message.delete();
             
         break;
-        
+        case 'play':
+            if(!args[1])
+            {
+                message.channel.send("put link in lol");
+                return;
+            }
+
+            if(!message.member.voiceChannel)
+            {
+                message.channel.send("go in a vc lol");
+                return;
+            }
+
+
+
+        break;
         
 
 
